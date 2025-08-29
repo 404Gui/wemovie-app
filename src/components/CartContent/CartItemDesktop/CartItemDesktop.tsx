@@ -20,13 +20,14 @@ const CartItemDesktop = ({ item }: CartItemDesktopProps) => {
           className="object-contain rounded"
         />
         <div>
-          <h2 className="font-semibold text-gray-800">{item.title}</h2>
+          <h2 className="font-bold text-[#2F2E41] text-[14px]">{item.title}</h2>
           <p className="font-bold text-[#2F2E41]">R$ {item.price.toFixed(2)}</p>
         </div>
       </div>
 
       <div className="flex items-center justify-center gap-2">
         <button
+          className="cursor-pointer"
           onClick={() =>
             dispatch({ type: "DECREMENT_ITEM", payload: { id: item.id } })
           }
@@ -46,9 +47,10 @@ const CartItemDesktop = ({ item }: CartItemDesktopProps) => {
               },
             })
           }
-          className="w-12 text-center border border-[#D9D9D9] rounded py-1 text-sm text-gray-800 focus:outline-none"
+          className="w-[62px] text-center border border-[#D9D9D9] rounded py-1 text-sm text-[#2F2E41] focus:outline-none"
         />
         <button
+          className="cursor-pointer"
           onClick={() =>
             dispatch({ type: "INCREMENT_ITEM", payload: { id: item.id } })
           }
@@ -63,6 +65,7 @@ const CartItemDesktop = ({ item }: CartItemDesktopProps) => {
 
       <div className="flex justify-end">
         <button
+          className="cursor-pointer"
           onClick={() =>
             dispatch({ type: "REMOVE_ITEM", payload: { id: item.id } })
           }

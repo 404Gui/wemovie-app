@@ -16,12 +16,12 @@ const HomeContent = ({ movies }: Props) => {
           <img
             src={movie.image}
             alt={movie.title}
-            className="w-40 h-56 object-contain mb-4"
+            className="w-40 h-56 object-contain mb-4 font-bold text-[12px]"
           />
           <h2 className="text-lg font-semibold text-gray-800 text-center mb-2">
             {movie.title}
           </h2>
-          <p className="text-blue-600 font-bold text-lg mb-4">
+          <p className="text-[#2F2E41] font-bold text-[16px] mb-4">
             R$ {movie.price.toFixed(2)}
           </p>
           <HomeAddButton

@@ -21,12 +21,12 @@ const CartItemMobile = ({ item }: CartItemMobileProps) => {
 
       <div className="flex flex-col flex-1 gap-2">
         <div className="flex items-start justify-between">
-          <h2 className="font-semibold text-gray-800 text-sm leading-tight max-w-[120px]">
+          <h2 className="font-bold text-[#2F2E41] leading-tight max-w-[120px]">
             {item.title}
           </h2>
 
           <div className="flex items-center gap-2">
-            <p className="text-[#2F2E41] text-sm font-bold whitespace-nowrap  ">
+            <p className="text-[#2F2E41] text-[15px] font-bold whitespace-nowrap  ">
               R$ {item.price.toFixed(2)}
             </p>
             <button
@@ -62,7 +62,7 @@ const CartItemMobile = ({ item }: CartItemMobileProps) => {
                   },
                 })
               }
-              className="w-12 text-center border border-[#D9D9D9] rounded py-1 text-sm text-gray-800 focus:outline-none"
+              className="w-[62px] text-center border border-[#D9D9D9] rounded py-1 text-sm text-gray-800 focus:outline-none"
             />
 
             <button
@@ -75,7 +75,7 @@ const CartItemMobile = ({ item }: CartItemMobileProps) => {
           </div>
 
           <div className="text-right">
-            <span className="block text-xs font-semibold text-gray-400">
+            <span className="block text-[12px] font-bold text-[#999999]">
               SUBTOTAL
             </span>
             <span className="block font-bold text-[#2F2E41]">

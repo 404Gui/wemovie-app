@@ -7,12 +7,12 @@ const Header = () => {
     <header className="w-full h-20 bg-transparent">
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4 sm:px-6">
         <Link href="/">
-          <h1 className="text-white text-xl font-bold">WeMovies</h1>
+          <h1 className="text-white text-[20px] font-bold">WeMovies</h1>
         </Link>
 
         <div className="flex items-center gap-3">
           <div className="flex flex-col text-right">
-            <span className="text-white text-sm font-medium cursor-pointer hidden sm:block">
+            <span className="text-white text-[14px] font-semibold cursor-pointer hidden sm:block">
               Meu Carrinho
             </span>
             <Link href="/carrinho">

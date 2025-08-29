@@ -13,7 +13,7 @@ const EmptyState = ({
   const ButtonContent = (
     <button
       onClick={onClick}
-      className="bg-blue-500 text-white font-medium px-6 py-3 rounded hover:bg-blue-600 transition"
+      className="bg-[#009EDD] cursor-pointer text-white font-bold px-6 py-3 rounded hover:bg-blue-600 transition"
     >
       {buttonLabel}
     </button>
@@ -21,7 +21,7 @@ const EmptyState = ({
 
   return (
     <div className="h-[596px] bg-white rounded-[4px] p-16 flex flex-col items-center justify-center gap-6 shadow-lg">
-      <h2 className="text-xl text-center font-semibold text-gray-900">
+      <h2 className="text-[20px] text-center font-bold text-[#2F2E41]">
         {title}
       </h2>
 

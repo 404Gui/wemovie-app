@@ -26,9 +26,9 @@ const HomeAddButton = ({
       onClick={handleAdd}
       className={`${
         quantity > 0
-          ? "bg-green-600 hover:bg-green-700"
-          : "bg-blue-500 hover:bg-blue-600"
-      } text-white font-medium px-4 py-2 rounded-lg transition flex items-center justify-center gap-2 w-full`}
+          ? "bg-[#039B00] hover:bg-green-700"
+          : "bg-[#009EDD] hover:bg-blue-600"
+      } text-white font-medium px-4 py-2 rounded-lg transition flex items-center justify-center gap-2 w-full cursor-pointer`}
     >
       <Image
         src="/carrinho_home.png"
@@ -37,8 +37,8 @@ const HomeAddButton = ({
         height={13}
         className="object-contain"
       />
-      {quantity > 0 && <span>{quantity}</span>}
-      <span className="uppercase">Adicionar ao Carrinho</span>
+      {quantity > 0 && <span className="text-[12px]">{quantity}</span>}
+      <span className="uppercase font-bold text-[12px]">Adicionar ao Carrinho</span>
     </button>
   );
 };

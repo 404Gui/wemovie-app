@@ -34,7 +34,7 @@ const CartContent = () => {
         <span className="invisible">Ações</span>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4">
         {state.items.map((item) => (
           <div key={item.id}>
             <CartItemDesktop item={item} />
@@ -46,14 +46,14 @@ const CartContent = () => {
       <div className="flex flex-col-reverse sm:flex-row justify-between items-center border-t mt-6 pt-4 gap-4">
         <Link
           href="/sucesso"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-semibold w-full sm:w-auto text-center"
+          className="bg-[#009EDD] hover:bg-blue-600 text-white text-[12px] px-6 py-3 rounded-md font-bold w-full sm:w-auto text-center"
         >
           FINALIZAR PEDIDO
         </Link>
 
         <div className="flex items-center justify-between w-full sm:w-auto gap-2">
-          <span className="text-[#999999] font-bold">TOTAL</span>
-          <span className="text-xl font-bold text-[#2F2E41]">
+          <span className="text-[#999999] text-[14px] font-bold">TOTAL</span>
+          <span className="text-[24px] font-bold text-[#2F2E41]">
             R$ {total.toFixed(2)}
           </span>
         </div>

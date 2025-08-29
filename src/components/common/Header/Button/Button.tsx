@@ -9,7 +9,7 @@ const HeaderItensButton = () => {
 
   return (
     <button
-      className="text-gray-300 text-xs cursor-pointer hover:text-gray-100 transition-colors duration-200"
+      className="text-[#999999] text-[12px] font-semibold cursor-pointer hover:text-gray-100 transition-colors duration-200"
     >
       {totalItens} itens
     </button>
