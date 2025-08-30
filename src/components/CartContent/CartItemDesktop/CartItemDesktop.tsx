@@ -11,7 +11,7 @@ const CartItemDesktop = ({ item }: CartItemDesktopProps) => {
 
   return (
     <div className="hidden sm:grid grid-cols-4 items-center">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6">
         <Image
           src={item.image}
           alt={item.title}
@@ -19,7 +19,7 @@ const CartItemDesktop = ({ item }: CartItemDesktopProps) => {
           height={90}
           className="object-contain rounded"
         />
-        <div>
+        <div className="flex flex-col gap-2">
           <h2 className="font-bold text-[#2F2E41] text-[14px]">{item.title}</h2>
           <p className="font-bold text-[#2F2E41]">R$ {item.price.toFixed(2)}</p>
         </div>

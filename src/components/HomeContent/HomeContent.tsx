@@ -7,7 +7,7 @@ type Props = {
 
 const HomeContent = ({ movies }: Props) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 pb-3">
       {movies.map((movie) => (
         <div
           key={movie.id}
